@@ -19,7 +19,6 @@ spec:
   {{- end }}
   rules:
   {{- range .Values.webhooks.ingress.hosts }}
-  - host: {{ . | quote }}
     http:
       paths:
         - backend:
